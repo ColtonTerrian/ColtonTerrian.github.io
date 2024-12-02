@@ -72,6 +72,26 @@
         .bottom-right-img:hover {
             opacity: 1;
         }
+
+        /* Hero Section Layout */
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: start; /* Align to the left */
+            gap: 15px; /* Space between the image and text */
+        }
+
+        .profile-pic {
+            width: 80px; /* Small size for the image */
+            height: 80px; /* Matches the width for a square shape */
+            border-radius: 50%; /* Circular appearance */
+            border: 2px solid white; /* Optional border */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+        }
+
+        .hero-text {
+            text-align: left; /* Align text to the left */
+        }
     </style>
 </head>
 <body>
@@ -79,9 +99,13 @@
     <div class="container">
         <!-- Hero Section -->
         <section id="hero">
-            <img src="Mountain.JPG" alt="Colton's Photo" class="profile-pic">
-            <h1>Colton E. Terrian</h1>
-            <h3>Aspiring Software Engineer | Current University of Michigan Student</h3>
+            <div class="hero-content">
+                <img src="Mountain.JPG" alt="Colton's Photo" class="profile-pic">
+                <div class="hero-text">
+                    <h1>Colton E. Terrian</h1>
+                    <h3>Aspiring Software Engineer | Current University of Michigan Student</h3>
+                </div>
+            </div>
             <a href="mystuff.html" class="btn">View My Projects</a>
         </section>
 
