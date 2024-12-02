@@ -57,6 +57,21 @@
         a {
             color: aqua;
         }
+
+        /* Styles for the bottom-right image */
+        .bottom-right-img {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px; /* Adjust width for size */
+            height: auto; /* Maintain aspect ratio */
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .bottom-right-img:hover {
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -95,7 +110,8 @@
                 width="80%" height="900" frameborder="0">Loading…</iframe>
         </section>
     </div>
+
+    <!-- Bottom-Right Image -->
     <img src="IMG_3674.HEIC" alt="Logo" class="bottom-right-img">
 </body>
 </html>
-
